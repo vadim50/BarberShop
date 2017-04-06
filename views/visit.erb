@@ -22,11 +22,11 @@
   <div class="form-group">
   <label>Выберите мастера:</label>
   <select name="master" class="form-control">
-  <option value="Secator ninzja">Secator ninzja</option>
-  <option value="Boroda naxer">Boroda naxer</option>
-  <option value="Wizapd">Wizapd</option>
-  <option value="All Clean">All Clean</option>
-  <option value="Under Walt">Under Walt</option>
+  <option <%= @master == 'Secator ninzja' ? 'selected' : '' %> value="Secator ninzja">Secator ninzja</option>
+  <option <%= @master == 'Boroda naxer'? 'selected' : '' %> value="Boroda naxer">Boroda naxer</option>
+  <option <%= @master == 'Wizapd'? 'selected' : '' %> value="Wizapd">Wizapd</option>
+  <option <%= @master == 'All Clean'? 'selected' : '' %> value="All Clean">All Clean</option>
+  <option <%= @master == 'Under Walt'? 'selected' : '' %> value="Under Walt">Under Walt</option>
   </select>
   </div>
 
