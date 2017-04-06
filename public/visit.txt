@@ -1,0 +1,13 @@
+Name: vadim, Phone: 8 988 311-93-19, Date: 3.04.2017, Wizard: Wizapd, Color: #46d6db
+Name: Alex, Phone: 8 988 311-93-19, Date: 5.04.2017, Wizard: Secator ninzja, Color: #a4bdfc
+Name: Vasiliy, Phone: 8909666043, Date: 5.04.2017, Wizard: Boroda naxer, Color: #7ae7bf
+Name: Vasiliy, Phone: 8 988 311-93-19, Date: 5.04.2017, Wizard: Under Walt, Color: #e1e1e1
+Name: nikolay, Phone: 333 333 4444, Date: 5.04.2017, Wizard: Boroda naxer, Color: #a4bdfc
+Name: nikolay, Phone: 8 988 311-93-19, Date: 5.04.2017, Wizard: Boroda naxer, Color: #51b749
+Name: Alex, Phone: 8 988 311-93-19, Date: 6.04.2017, Wizard: All Clean, Color: #5484ed
+Name: vadim, Phone: 89094594505, Date: 5.04.2017, Wizard: Boroda naxer, Color: #a4bdfc
+Name: admin, Phone: 89094594505, Date: 5.04.2017, Wizard: Secator ninzja, Color: #7bd148
+Name: admin, Phone: 89094594505, Date: 5.04.2017, Wizard: Secator ninzja, Color: #7bd148
+Name: Alex, Phone: 89094594505, Date: 3.04.2017, Wizard: Wizapd, Color: #7bd148
+Name: Alex, Phone: 89094594505, Date: 3.04.2017, Wizard: Wizapd, Color: #7bd148
+Name: Petr, Phone: 89094594505, Date: 3.04.2017, Wizard: Wizapd, Color: #51b749
