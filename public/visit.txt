@@ -11,3 +11,5 @@ Name: admin, Phone: 89094594505, Date: 5.04.2017, Wizard: Secator ninzja, Color:
 Name: Alex, Phone: 89094594505, Date: 3.04.2017, Wizard: Wizapd, Color: #7bd148
 Name: Alex, Phone: 89094594505, Date: 3.04.2017, Wizard: Wizapd, Color: #7bd148
 Name: Petr, Phone: 89094594505, Date: 3.04.2017, Wizard: Wizapd, Color: #51b749
+Name: vadim, Phone: 89094594505, Date: 3.04.2017, Wizard: Wizapd, Color: #a4bdfc
+Name: vadim, Phone: 89094594505, Date: 3.04.2017, Wizard: Wizapd, Color: #a4bdfc

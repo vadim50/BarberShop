@@ -21,18 +21,18 @@
 
   <div class="form-group">
   <label>Выберите мастера:</label>
-  <select name="master" class="form-control">
-  <option <%= @master == 'Secator ninzja' ? 'selected' : '' %> value="Secator ninzja">Secator ninzja</option>
-  <option <%= @master == 'Boroda naxer'? 'selected' : '' %> value="Boroda naxer">Boroda naxer</option>
-  <option <%= @master == 'Wizapd'? 'selected' : '' %> value="Wizapd">Wizapd</option>
-  <option <%= @master == 'All Clean'? 'selected' : '' %> value="All Clean">All Clean</option>
-  <option <%= @master == 'Under Walt'? 'selected' : '' %> value="Under Walt">Under Walt</option>
+  <select name="barber" class="form-control">
+  <option <%= @barber == 'Secator ninzja' ? 'selected' : '' %> value="Secator ninzja">Secator ninzja</option>
+  <option <%= @barber == 'Boroda naxer'? 'selected' : '' %> value="Boroda naxer">Boroda naxer</option>
+  <option <%= @barber == 'Wizapd'? 'selected' : '' %> value="Wizapd">Wizapd</option>
+  <option <%= @barber == 'All Clean'? 'selected' : '' %> value="All Clean">All Clean</option>
+  <option <%= @barber == 'Under Walt'? 'selected' : '' %> value="Under Walt">Under Walt</option>
   </select>
   </div>
 
   <div class="form-group">
   <label>Выберите будущий цвет: </label>
-  <select id="color" name="col">
+  <select id="color" name="color">
   <option value="#7bd148">Green</option>
   <option value="#5484ed">Bold blue</option>
   <option value="#a4bdfc">Blue</option>

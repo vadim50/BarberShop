@@ -2,18 +2,25 @@ require 'rubygems'
 require 'sinatra'
 require 'sqlite3'
 
-configure do
-	@db = SQLite3::Database.new 'barbershop.sqlite'
 
-	@db.execute ' CREATE TABLE IF NOT EXISTS
-				users
-				(
-				 	"id" INTEGER PRIMARY KEY AUTOINCREMENT,
-	 				"name" TEXT, "phone" TEXT,
-	 				"date_stamp" TEXT,
-	 				"master" TEXT,
-	 				"color" TEXT
-	 			);'
+def get_db
+	db = SQLite3::Database.new 'barbershop.sqlite'
+	return db
+end
+
+configure do
+	 db = get_db
+
+	db.execute 'CREATE TABLE IF NOT EXISTS
+		"Us"
+		(
+			"id" INTEGER PRIMARY KEY AUTOINCREMENT,
+			"username" TEXT,
+			"phone" TEXT,
+			"datestamp" TEXT,
+			"barber" TEXT,
+			"color" TEXT
+		)'
 
 end
 
@@ -34,8 +41,8 @@ post '/visit' do
 	@username = params[:username]
 	@phone = params[:phone]
 	@datetime = params[:datetime]
-	@master = params[:master]
-	@col = params[:col]
+	@barber = params[:barber]
+	@color = params[:color]
 
 	hh = {
 
@@ -49,12 +56,21 @@ post '/visit' do
 	if @error != ''
 		return erb :visit
 	end
+	db = get_db
+	db.execute 'insert into
+		Us
+		(
+			username,
+			phone,
+			datestamp,
+			barber,
+			color
+		)
+		values (?, ?, ?, ?, ?)', [@username, @phone, @datetime, @barber, @color]
+	
 
-	f = File.open("./public/visit.txt", "a")
-	f.write("Name: #{@username}, Phone: #{@phone}, Date: #{@datetime}, Wizard: #{@master}, Color: #{@col}\n")
-	f.close
-	@message = "Hello #{@username} you phone #{@phone} we waiting you at #{@datetime},
-	you color is #{@col} and Wizard: #{@master}"
+	 @message = "Hello #{@username} you phone #{@phone} we waiting you at #{@datetime},
+		you color is #{@color} and Wizard: #{@barber}"
 
 	erb :checkout
 end
@@ -86,3 +102,5 @@ end
  get '/input' do
  	erb :input
  end
+
+ 
