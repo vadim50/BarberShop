@@ -5,6 +5,8 @@ require 'sqlite3'
 
 def get_db
 	db = SQLite3::Database.new 'barbershop.sqlite'
+	db.results_as_hash = true
+
 	return db
 end
 
@@ -87,7 +89,8 @@ post '/admin' do
 
 	if @login == 'admin' && @password == '12345'
 
-		@f = File.open("./public/visit.txt", "r")
+		db = get_db
+		@results = db.execute 'select * from Us order by id desc'
 
 		erb :vizitlist
 	else
