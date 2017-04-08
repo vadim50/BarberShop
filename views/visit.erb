@@ -31,11 +31,9 @@ $(function() {
   <div class="form-group">
   <label>Выберите мастера:</label>
   <select name="barber" class="form-control">
-  <option <%= @barber == 'Secator ninzja' ? 'selected' : '' %> value="Secator ninzja">Secator ninzja</option>
-  <option <%= @barber == 'Boroda naxer'? 'selected' : '' %> value="Boroda naxer">Boroda naxer</option>
-  <option <%= @barber == 'Wizapd'? 'selected' : '' %> value="Wizapd">Wizapd</option>
-  <option <%= @barber == 'All Clean'? 'selected' : '' %> value="All Clean">All Clean</option>
-  <option <%= @barber == 'Under Walt'? 'selected' : '' %> value="Under Walt">Under Walt</option>
+  <% @barbers.each do |master| %>
+  <option <%= @barber == master['name'] ? 'selected' : '' %> ><%= master['name'] %></option>
+  <% end %>
   </select>
   </div>
 

@@ -9,6 +9,7 @@
 		<th>Цвет</th>
 	</tr>
 </thead>
+<tbody>
 <% @results.each do |row| %>
 	<tr>
 		<th scope="row"><%= row['id'] %></th>
@@ -19,6 +20,6 @@
 		<td><%= row['color'] %></td>
 	</tr>
 <% end %>
-
+</tbody>
 </table>
 
